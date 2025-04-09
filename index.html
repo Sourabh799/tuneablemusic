@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tuneable-Web Player:Music For Everyone</title>
+    <link rel="icon" href="navbar/image.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="playbar.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="images">
+                <div class="menu-bar">
+                    <img src="navbar/menu-bar.png" alt="menu" onclick="openmenu()" id="menuicon">
+
+                    <img src="navbar/cross.png" alt="cross" onclick="closemenu()" id="closeicon">
+                </div>
+                <div class="home">
+                    <img src="navbar/image2.png" alt="">
+                </div>
+                <!-- <img src="navbar/image.png" alt=""> -->
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search what you want........">
+                <button class="search">
+                    <img src="navbar/image3.png" alt="search icon">
+                </button>
+            </div>
+            <div class="button">
+                <button class="subscribe">
+                    subscribe
+                </button>
+                <button>Log In</button>
+                <button>Sing In</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="menu">
+        <div class="your-library">
+            <span class="library-icon">
+                <a href="#"><img src="sidebar/image5.png" alt="icon"></a>
+            </span>
+            <span class="library-title"><a href="#">Your Library</a></span>
+            <span class="plus-icon"><button><a href="#"><img src="sidebar/plusicon.png" alt=""></a></button></span>
+            <div class="scrol-box">
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Dafety & Privacy Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">About Ads</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+                <span class="cookies">
+                    <ul>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </span>
+                <span class="language-button">
+                    <button><a href="#"><img src="sidebar/language.png" alt="earth">English</a></button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="rightbar">
+            <div class="tunable-playlist scrol-box">
+                <div class="scrol-box">
+                    <a href="#">
+                        <h2>Popular albums and singles</h2>
+                    </a>
+                    <div class="card">
+                        <div class="item">
+                            <img src="images/Sanam Teri Kasam.jpeg" alt="">
+                            <div class="play-btn" onclick="togglePlay('song1')">
+                                <span><img src="sidebar/playbtn.png" alt=""></span>
+                            </div>
+                            <h4>Sanam Teri Kasam (Original Motion Picture Soundtrack)</h4>
+                            <p>Himesh Reshammiya Sameer Anjaan Subrat Sinha</p>
+                            <audio id="song1" class="audio-player">
+                                <source src="songs/Sanam Teri Kasam - Sanam Teri Kasam 320 Kbps.mp3" type="audio/mpeg">
+                            </audio>
+
+                        </div>
+                        <div class="item">
+                            <img src="images/128Angaaron - Pushpa 2 The Rule 128 Kbps.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay('song2')">
+                                <span><img src="sidebar/playbtn.png" alt=""></span>
+                            </div>
+                            <h4>GLORY</h4>
+                            <p>Yo Yo Honey Singh</p>
+                            <audio id="song2" class="audio-player">
+                                <source src="songs/Angaaron - Pushpa 2 The Rule 320 Kbps.mp3" type="audio/mpeg">
+                            </audio>
+
+                        </div>
+                        <div class="item">
+                            <img src="images/Aashiqui2.jpeg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Aashiqui 2</h4>
+                            <p>Mithoon,Ankit Tiwari,Jeet Gannguli</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Yeh Jawaani Hai Dewani.jpeg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Yeh Jawaani Hai Dewani</h4>
+                            <p>Pritam</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Korean.jpeg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Who (Remixes)</h4>
+                            <p>Jimin</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/90-S-Best-Sad-Songs-Hindi.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Who (Remixes)</h4>
+                            <p>Jimin</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Bhediya-Hindi-2023.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Who (Remixes)</h4>
+                            <p>Jimin</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Chhaava-Hindi-2025.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Who (Remixes)</h4>
+                            <p>Jimin</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/HindiHitSongs_2024.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Who (Remixes)</h4>
+                            <p>Jimin</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Kal-Ho-Naa-Ho-Hindi-2003.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Who (Remixes)</h4>
+                            <p>Jimin</p>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <h2>Songs Lists</h2>
+                    </a>
+                    <div class="card">
+                        <div class="item">
+                            <img src="images/Sanam Teri Kasam.jpeg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4>Sanam Teri Kasam (Original Motion Picture Soundtrack)</h4>
+                            <p>Himesh Reshammiya Sameer Anjaan Subrat Sinha</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Yeh Jawaani Hai Dewani.jpeg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Korean.jpeg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Kal-Ho-Naa-Ho-Hindi-2003.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                        <div class="item">
+                            <img src="images/90-S-Best-Sad-Songs-Hindi.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Bhediya-Hindi-2023.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Mere-Dholna-3-0-Sonu-Nigam-Version.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Pushpa-2-The-Rule-Hindi-2024.jpg" alt="">
+                            <div class="play-btn" onclick="togglePlay('song3')">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                            <audio id="song3" class="audio-player">
+                                <source src="songs/Pushpa Pushpa - Pushpa 2 The Rule 320 Kbps.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <div class="item">
+                            <img src="images/Aashiqui2.jpeg" alt="">
+                            <div class="play-btn" onclick="togglePlay()">
+                                <span><img src="sidebar/playbtn.png"></span>
+                            </div>
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="playbar">
+
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+
+            <div class="btn">
+                <img id="previous" src="playbar/previous.png" alt="" onclick="">
+                <img id="play" class="play" src="playbar/play.png" alt="">
+                <img id="pause" class="pause" src="playbar/pause-button.png" alt="" onclick="">
+                <img id="forward" src="playbar/forward-button.png" alt="" onclick="">
+            </div>
+            <div class="abovebar">
+                <div class="songinfo">
+                </div>
+                <div class="songtime">
+
+                </div>
+            </div>
+            <div class="timevol">
+                <div class="volume">
+                    <img src="playbar/volume-high-Stroke-Rounded.png" alt="">
+                </div>
+                <div class="range">
+                    <input type="range" name="volume">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

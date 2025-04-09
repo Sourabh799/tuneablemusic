@@ -1,0 +1,111 @@
+.playbar {
+    height: 75px;
+    background-color: rgb(24, 21, 21);
+    overflow: auto;
+    position: fixed;
+    border-radius: 10px;
+    width: calc(100%);
+    bottom: 0;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.btn img {
+    filter: invert(100%);
+}
+
+.pause {
+    display: none;
+    height: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.play {
+    height: 25px;
+    margin: 0 10px;
+    display: inline;
+    cursor: pointer;
+}
+
+#previous {
+    height: 25px;
+    cursor: pointer;
+}
+
+
+#forward {
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.seekbar {
+    height: 4px;
+    width: calc(98%);
+    background: white;
+    border-radius: 20px;
+    margin: 0px auto;
+    position: relative;
+    top: 6px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    transition: left 0.1s linear;
+}
+
+.songinfo, .songtime{
+    color: white;
+}
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin: -10px 0;
+}
+
+.timevol{
+    display: flex;
+    position: relative;
+    top: -30px;
+    gap: 4px;
+    left: 86%;
+    width: 0px;
+}
+
+.volume img{
+height: 20px;
+filter: invert(100%);
+}
+.range input{
+    height: 20px;
+    width: 150px;
+    cursor: pointer;
+    
+}
+
+
+@media only screen and (max-width:800px){
+.abovebar{
+    font-size: 10px;
+    padding: 0 4px;
+    margin: 5px 0;
+}
+}
